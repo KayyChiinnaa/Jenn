@@ -94,19 +94,19 @@ body {
 }
 
 /* Style untuk form login */
-.login-form {
+.login{
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin-top: 15px;
 }
 
-.login-form label {
+.login label {
   font-weight: bold;
   font-size: 14px;
 }
 
-.login-form input {
+.login input {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -115,13 +115,13 @@ body {
   transition: border-color 0.2s;
 }
 
-.login-form input:focus {
+.login input:focus {
   outline: none;
   border-color: #a9b7ff;
   background: #ffffff;
 }
 
-.login-form button {
+.login button {
   margin-top: 10px;
   background: #a9b7ff;
   color: #fff;
@@ -133,7 +133,7 @@ body {
   transition: background 0.3s;
 }
 
-.login-form button:hover {
+.login button:hover {
   background: #8e9cff;
 }
 
