@@ -93,24 +93,57 @@ body {
   margin-bottom: 10px;
 }
 
-.middle img {
-  width: 100%;
-  border-radius: 8px;
-  margin: 10px 0;
-  opacity: 0.9;
+/* Style untuk form login */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
 }
 
-.middle img:hover {
-  opacity: 1;
+.login-form label {
+  font-weight: bold;
+  font-size: 14px;
 }
 
-.middle a {
+.login-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #f9f9f9;
+  transition: border-color 0.2s;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #a9b7ff;
+  background: #ffffff;
+}
+
+.login-form button {
+  margin-top: 10px;
+  background: #a9b7ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-form button:hover {
+  background: #8e9cff;
+}
+
+.small-text {
+  font-size: 13px;
+  text-align: center;
+}
+
+.small-text a {
   color: #5061b5;
-  text-decoration: none;
-}
-
-.middle a:hover {
-  text-decoration: underline;
 }
 
 /* Kolom kanan */
@@ -128,19 +161,8 @@ body {
   list-style: none;
 }
 
-.right ul li a {
-  display: block;
-  padding: 10px;
-  background: #fff;
+.right ul li {
   margin-bottom: 8px;
-  border-radius: 6px;
-  border: 1px solid #e0e0e0;
-  color: #5061b5;
-  transition: 0.3s;
-}
-
-.right ul li a:hover {
-  background: #e8ebff;
 }
 
 /* Footer */
@@ -173,4 +195,4 @@ body {
   .footer {
     font-size: 13px;
   }
-}
+  }
