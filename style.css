@@ -11,9 +11,10 @@ body {
   font-size: 15px;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
   color: #2d2d2d;
   line-height: 1.6;
-  
 }
 
 /* Container utama */
@@ -26,7 +27,7 @@ body {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   display: flex;
-  justify-content:center;
+  flex-direction: column;
 }
 
 /* Header */
@@ -34,8 +35,9 @@ header {
   background: linear-gradient(135deg, #a9c9ff, #ffbbec);
   color: #2d2d2d;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
   border-bottom: 1px solid #d8d8d8;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 header h1 {
@@ -79,7 +81,6 @@ header h1 {
   color: #333;
   border-radius: 6px;
   transition: 0.3s;
-  
 }
 
 .left ul li a:hover {
@@ -97,11 +98,34 @@ header h1 {
   margin-bottom: 10px;
 }
 
-/* Style untuk form login */
-.login{
+/* Gambar berita */
+.middle img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.middle img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.middle a {
+  color: #5061b5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.middle a:hover {
+  text-decoration: underline;
+}
+
+/* Form login */
+.login {
   display: flex;
   flex-direction: column;
-  gap:15px;
+  gap: 15px;
   margin-top: 15px;
 }
 
@@ -134,11 +158,15 @@ header h1 {
   padding: 10px;
   font-size: 15px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.1s;
 }
 
 .login button:hover {
   background: #8e9cff;
+}
+
+.login button:active {
+  transform: scale(0.98);
 }
 
 .small-text {
@@ -193,10 +221,10 @@ footer {
   body {
     font-size: 14px;
   }
-  .header h1 {
+  header h1 {
     font-size: 20px;
   }
-  .footer {
+  footer {
     font-size: 13px;
   }
-  }
+}
