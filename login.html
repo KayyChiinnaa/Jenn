@@ -1,17 +1,21 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - Website Responsive</title>
+  <title>Halaman Login</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-    <header class="header">
-      <h1>Halaman Login</h1>
-    </header>
+
+  <!-- Header -->
+  <header>
+    <h1>Halaman Login</h1>
+  </header>
+
   <div class="container">
     <main class="main">
+
       <section class="left">
         <h3>Menu</h3>
         <ul>
@@ -20,17 +24,21 @@
           <li><a href="#">Daftar</a></li>
         </ul>
       </section>
+
       <section class="middle">
         <h3>Masuk ke Akun</h3>
         <form class="login" action="#" method="post">
           <label for="username">Username</label>
-          <input type="text" id="username" name="username" placeholder="Masukkan username" required>
+          <input type="text" id="username" name="username" placeholder="Masukkan username" required autocomplete="username">
+
           <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+          <input type="password" id="password" name="password" placeholder="Masukkan password" required autocomplete="current-password">
+
           <button type="submit">Login</button>
           <p class="small-text">Belum punya akun? <a href="#">Daftar di sini</a></p>
         </form>
       </section>
+
       <section class="right">
         <h3>Tips Login Aman</h3>
         <ul>
@@ -39,11 +47,13 @@
           <li>Selalu logout setelah selesai</li>
         </ul>
       </section>
+
     </main>
   </div>
-    <footer class="footer">
-      <p>Copyright &copy; Haikal,Fauzan dan Fardhan</p>
-    </footer>
-  
+
+  <footer>
+    <p>&copy; 2025 Haikal, Fauzan, dan Fardhan</p>
+  </footer>
+
 </body>
 </html>
